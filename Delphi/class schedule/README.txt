@@ -2,5 +2,5 @@
 
 Two version:
 
-implementation through SQL to BD
+implementation through SQL to BD. 
 implementation through reference data type
