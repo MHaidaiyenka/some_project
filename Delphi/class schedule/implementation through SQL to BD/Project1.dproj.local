@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.613,=C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.490,=C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.291,=C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.057,=G:\kursa4\2\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.819,C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Unit1.pas=G:\kursa4\2\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,=G:\kursa4\2\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.992,C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Project1.dproj=G:\kursa4\2\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.724,=G:\kursa4\2\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.819,C:\Users\mishka\Documents\Embarcadero\Studio\Projects\Unit1.dfm=G:\kursa4\2\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.275,=G:\kursa4\2\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.740,=G:\kursa4\2\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>
