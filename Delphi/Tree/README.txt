@@ -1,0 +1,2 @@
+Enter 10-15 integers and build a binary search tree from them. Run symmetrical firmware binary search tree. Bypass it according to the symmetrical order of the elements. Implement search and insert elements of symmetrically stitched binary tree.
+Tnx Nastya

@@ -1,0 +1,2 @@
+Based on dynamic lists you need to implement a dictionary. Implement search, insert and delete dictionary data. In conjunction with lists, dictionary building requires the use of open data hashing.
+Reaally tnx for my classmate Nastya

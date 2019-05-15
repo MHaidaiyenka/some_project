@@ -1,0 +1,1 @@
+calculating the approximate value of a definite integral of a function on the interval [a, b] with a given accuracy of the Gauss quadrature formula.

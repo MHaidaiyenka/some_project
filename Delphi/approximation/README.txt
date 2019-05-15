@@ -1,0 +1,1 @@
+Create two programs for the approximation of tabular functions: the first program using Lagrange interpolation polynomials, the second - cubic splines
