@@ -1,4 +1,6 @@
-﻿Program Holeckiy;
+﻿calculation of matrices using the  Cholesky method
+
+Program Holeckiy;
 uses crt;
 Type
   MA=Array [1..100,1..100] of Real;

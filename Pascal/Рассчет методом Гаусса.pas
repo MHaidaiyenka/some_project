@@ -1,4 +1,6 @@
-﻿Program Gauss;
+﻿calculation of matrix using the Gauss method
+
+Program Gauss;
 uses crt;
 Type
 MasA = Array [1..100,1..100] of real;
