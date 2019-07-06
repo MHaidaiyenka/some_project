@@ -1,3 +1,22 @@
+/*Реализовать двухсторонний связанный список на JavaScript 
+(без использования каких-либо библиотек или фреймворков) 
+со следующей структорой.  
+
+class LinkedList {
+    constructor() {}
+    append(data) {} 
+    head() {} 
+    tail() {} 
+    at(index) {} 
+    insertAt(index, data) {} 
+    isEmpty() {} 
+    clear() {} 
+    deleteAt(index) {}
+    reverse() {} 
+    indexOf(data) {}
+*/
+}
+
 class Node {
     constructor(data) {
         this.data = data;
@@ -28,7 +47,7 @@ class DLList {
         if (this.isEmpty()) {
             return console.log("is empty");
         } else {
-            return this.at(0);
+            return this.begine;
         }
     }
 
@@ -45,14 +64,14 @@ class DLList {
         let current = this.begine;
         let count = 1;
         let node = new Node(data);
-        if (index == 0) {
+        if (index === 0) {
             this.begine.prev = node;
             node.next = this.begine;
             this.begine = node;
         } else {
             while (current) {
                 current = current.next;
-                if (current == index) {
+                if (current === index) {
                     node.prev = current.prev;
                     current.prev.next = node;
                     node.next = current;
@@ -66,7 +85,7 @@ class DLList {
     deleteAt(index) {
         let current = this.begine;
         let count = 1;
-        if (index == 0) {
+        if (index === 0) {
             this.begine = null;
             this.begine = this.begine.next;
         } else {
@@ -75,7 +94,7 @@ class DLList {
                 if (current == this.ende) {
                     this.ende = this.ende.prev;
                     this.ende.next = null;
-                } else if (count == index) {
+                } else if (count === index) {
                     current.prev.next = current.next;
                     current.next.prev = current.prev;
                     break;
@@ -118,7 +137,7 @@ class DLList {
         let current = this.begine;
         let count = 0;
         while (current) {
-            if (current.data == data) {
+            if (current.data === data) {
                 return count;
             }
             current = current.next;
@@ -131,7 +150,7 @@ class DLList {
         let current = this.begine;
         let count = 0;
         while (current) {
-            if (count == index) {
+            if (count === index) {
                 return current.data;
             }
             current = current.next;
