@@ -1,4 +1,4 @@
-/*Реализовать двухсторонний связанный список на JavaScript 
+/*Реализовать двухсторонний связанный список на JavaScript
 (без использования каких-либо библиотек или фреймворков) 
 со следующей структорой.  
 
@@ -15,7 +15,7 @@ class LinkedList {
     reverse() {} 
     indexOf(data) {}
 */
-}
+
 
 class Node {
     constructor(data) {
@@ -91,7 +91,7 @@ class DLList {
         } else {
             while (current) {
                 current = current.next;
-                if (current == this.ende) {
+                if (current === this.ende) {
                     this.ende = this.ende.prev;
                     this.ende.next = null;
                 } else if (count === index) {
