@@ -17,10 +17,11 @@ const (
 )
 
 var ips [] string
+var strCh chan string = make(chan string, 10)
 
 // save in json file function
 func saveInJson(port int) {
-	file, _ := json.Marshal(ips)                   // serialize data
+	file, _ := json.Marshal(ips)                    // serialize data
 	err := ioutil.WriteFile("ips.json", file, 0644) // write to file
 	if err != nil {
 		fmt.Println("\nError writing to file: ", err) // if error
@@ -46,7 +47,8 @@ func scan(ip string, port int) {
 	// port connection
 	if conn, err := net.DialTimeout("tcp", fmt.Sprintf(ip+":%d", port), time.Second); err == nil {
 		fmt.Println(ip, "has open port", port)
-		ips = append(ips, ip)
+		strCh <- ip
+		//ips = append(ips, ip)
 		_ = conn.Close() // close connection
 	}
 }
@@ -67,6 +69,10 @@ func main() {
 				go scan(ip, port)                                          // send to scan. run in multithread
 			}
 		}
+
+	}
+	for i := 0; i < len(strCh); i++ {
+		ips = append(ips, <-strCh)
 	}
 	if len(ips) > 0 {
 		saveInJson(port)
