@@ -69,9 +69,9 @@ func main() {
 				go scan(ip, port)                                          // send to scan. run in multithread
 			}
 		}
-
 	}
-	for i := 0; i < len(strCh); i++ {
+	lenCh := len(strCh)
+	for i := 0; i < lenCh; i++ {
 		ips = append(ips, <-strCh)
 	}
 	if len(ips) > 0 {
